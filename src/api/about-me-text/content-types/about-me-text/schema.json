@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_me_texts",
+  "info": {
+    "singularName": "about-me-text",
+    "pluralName": "about-me-texts",
+    "displayName": "about-me-text"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

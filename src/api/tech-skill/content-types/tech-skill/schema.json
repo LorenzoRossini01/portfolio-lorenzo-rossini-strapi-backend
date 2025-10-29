@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tech_skills",
+  "info": {
+    "singularName": "tech-skill",
+    "pluralName": "tech-skills",
+    "displayName": "tech-skill"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "level": {
+      "type": "integer",
+      "max": 5
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "tech_skills"
+    }
+  }
+}

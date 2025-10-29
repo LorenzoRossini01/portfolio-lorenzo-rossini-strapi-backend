@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "previous_jobs",
+  "info": {
+    "singularName": "previous-job",
+    "pluralName": "previous-jobs",
+    "displayName": "previous-job"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institution": {
+      "type": "string",
+      "required": true
+    },
+    "period": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    },
+    "degree": {
+      "type": "string"
+    }
+  }
+}

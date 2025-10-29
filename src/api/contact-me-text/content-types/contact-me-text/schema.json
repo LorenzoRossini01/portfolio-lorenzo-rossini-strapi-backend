@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_me_texts",
+  "info": {
+    "singularName": "contact-me-text",
+    "pluralName": "contact-me-texts",
+    "displayName": "contact-me-text"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
