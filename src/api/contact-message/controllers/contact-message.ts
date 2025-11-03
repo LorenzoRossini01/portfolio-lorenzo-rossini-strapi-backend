@@ -25,13 +25,15 @@ export default factories.createCoreController(
             }
           );
 
+        const adminEmail = process.env.SMTP_USERNAME || "lory.rox.01@gmail.com";
+
         // Email all'amministratore
         await strapi
           .plugin("email-designer-v5")
           .service("email")
           .sendTemplatedEmail(
             {
-              to: "lory.rox.01@gmail.com",
+              to: adminEmail,
             },
             {
               templateReferenceId: 2,
